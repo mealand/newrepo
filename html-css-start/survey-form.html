@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Training Survey
+        </title>
+        <link rel="stylesheet" href="survey-form.css">
+
+    </head>
+    <body>
+        <main>
+            <h1 id = "title">Training Review Survey</h1>
+            <p id = "description">We are committed to giving you the best training experience.<br>
+                Kindly take this survey to make us know how we can improve.
+            </p>
+            <form id = "survey-form">
+                <label id="name-label">
+                    Name <em>(required)</em> <br>
+                    <input type = "text" id = "name" class="element-size" placeholder="Fullname." required>
+                    <br><br>
+                </label>
+                <label id="email-label">
+                    Email <em>(required)</em> <br>
+                    <input type="email" id="email" class="element-size" placeholder="Valid email." required>
+                    <br><br>
+                </label>
+                <label id="number-label">
+                    Phone Number <em>(optional)</em> <br>
+                    <input type="tel" id="number" class="element-size" pattern="[0-9]{11}" placeholder="Valid Phone number.">
+                    <br><br>                    
+                </label>
+                <label id="age-label">
+                    Age <em>(optional)</em> <br>
+                    <input type="number" class="element-size" min="5" max="70" id="age-number" placeholder="Pick your age">
+                    <br><br>
+                </label>
+                <label for="dropdown">Course <em>(What course are you taking)</em></label>
+                <br>
+
+                <select name="dropdown" id="dropdown" class="element-size">
+                  <option disabled selected value>Choose one</option>
+                  <option value="css">Cascading Style Sheet</option>
+                  <option value="java">Programming with Java</option>
+                  <option value="python">Programming with Python</option>
+                  <option value="data-science">Programming for Data science</option>
+                </select> 
+                <br><br>
+                <label>How would you rate your experience?</label>
+                <br>
+                <label for="1-star" id="1-star-radio">
+                    <input type="radio" id="1-star" name="star-review">
+                    1-Star                    
+                </label>
+                <br>
+                <label for="2-star">
+                    <input type="radio" id="2-star" name="star-review">
+                    2-Star                    
+                </label>
+                <br>
+                <label for="3-star">
+                    <input type=radio id="3-star" name="star-review">
+                    3-Star                     
+                </label>
+                <br>
+                <label for="4-star">
+                    <input type="radio" id="4-star" name="star-review" checked>
+                    4-Star                    
+                </label>
+                <br><br>
+                <label>
+                    What should we do more?
+                </label>
+                <br>
+                <label for="online-resources" id="checkbox-label">
+                    <input type="checkbox" id="online-resources" name="improve-checkboxes" value="More online resources">
+                    More online resources                    
+                </label>
+                <br>
+                <label for="longer-video" id="checkbox2-label">
+                    <input type="checkbox" id="longer-video" name="improve-checkboxes" value="Longer videos">
+                    Longer videos                   
+                </label>
+                <br>
+                <label for="online-support" id="checkbox3-label">
+                    <input type="checkbox" id="online-support" name="improve-checkboxes" value="Real-time online support">
+                    Real-time online support                    
+                </label>
+                <br><br>
+                <label for="text-area">
+                    Additional Comments ?<br>
+                    <textarea id="text-area" placeholder="Enter your comments"></textarea>
+                </label>
+                <br><br>
+                <label id="submit-label">
+                    <button type="submit" id="submit-button">Submit</button>
+                </label>
+
+            </form>
+        </main>
+    </body>
+</html>
