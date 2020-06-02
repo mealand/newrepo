@@ -1,0 +1,23 @@
+/*body {
+    position: relative;
+}
+*/
+#main-doc {
+    display: flex;
+}
+
+#navbar {
+    border-right: solid;
+}
+
+@media only screen and (max-width:1000px){
+    #nav-img{
+        width: 100%;
+    }
+    #sec-img{
+        width: 100%;
+    }
+    #navbar{
+        width: 100rem;
+    }
+}
